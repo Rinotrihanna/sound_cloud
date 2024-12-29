@@ -26,6 +26,6 @@ jobs:
     - name: Push Docker image to Docker Hub
       run: |
         IMAGE_NAME=arai9/project
-        TAG=$(date +%Y%m%d%H%M%S)
+        TAG=arai9/projectTest
         docker tag my-image-name:$TAG $IMAGE_NAME:$TAG
         docker push $IMAGE_NAME:$TAG
