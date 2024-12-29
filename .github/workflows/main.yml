@@ -33,6 +33,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: your_dockerhub_username/product-service-app:latest
+          tags: arai9/project:latest
           build-args: |
             BUILD_VERSION=${{ github.sha }}
